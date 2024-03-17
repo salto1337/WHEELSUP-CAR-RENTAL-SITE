@@ -31,12 +31,14 @@ export function PriceCalculator() {
 	return (
 		<div className="bg-red-500 p-10 rounded-3xl">
 			<div>
-				<h2 className="text-bold text-5xl text-center uppercase text-white mb-7">
+				<h2 className="text-bold text-4xl md:text-5xl text-center uppercase text-white mb-7">
 					oblicz cene wypożyczenia auta
 				</h2>
 			</div>
-			<div className="flex justify-center gap-3 mb-10">
-				<select onChange={handleOptionChange}>
+			<div className="flex flex-wrap lg:flex-row justify-center gap-3 mb-10">
+				<select
+					className="w-[100%] lg:w-[25%] md:py-3 lg:py-0"
+					onChange={handleOptionChange}>
 					{options.map((option) => {
 						return (
 							<option key={option.name} value={option.price}>
@@ -45,15 +47,13 @@ export function PriceCalculator() {
 						);
 					})}
 				</select>
-				<div>
-					<input
-						className="pl-1"
-						type="number"
-						value={days}
-						placeholder="Liczba dni.."
-						onChange={handleDaysChange}
-					/>
-				</div>
+				<input
+					className="pl-1 w-[100%] lg:w-[25%] md:py-3 lg:py-0"
+					type="number"
+					value={days}
+					placeholder="Liczba dni.."
+					onChange={handleDaysChange}
+				/>
 			</div>
 			<div className="flex justify-center">
 				<button
