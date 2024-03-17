@@ -13,7 +13,7 @@ export function Question({ name, answer }) {
 		<div
 			onClick={handleShowAnswer}
 			className="bg-gray-500 mb-3 px-3 py-5 transition-all cursor-pointer relative">
-			<h3 className="font-bold text-3xl text-white">{name}</h3>
+			<h3 className="font-bold md:text-3xl text-white">{name}</h3>
 			<Image
 				className={`absolute transition-all right-1  md:right-5 top-5 ${
 					isAnswerShown ? "rotate-45" : "rotate-0"
