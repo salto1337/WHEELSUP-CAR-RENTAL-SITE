@@ -23,7 +23,9 @@ export function PriceCalculator() {
 	function CalculatePrice() {
 		const selectedCarPrice = options[currentOption].price;
 		const totalPrice = selectedCarPrice * days;
-		setTotalPrice(totalPrice);
+		if (totalPrice !== 0) {
+			setTotalPrice(totalPrice);
+		}
 	}
 
 	return (
