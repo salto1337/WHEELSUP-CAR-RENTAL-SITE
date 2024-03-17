@@ -4,7 +4,7 @@ import { CarDetails } from "./CarDetails";
 
 export function Car({ name, image, power, year, automatic, price }) {
 	return (
-		<div className="flex flex-col justify-center mb-[250px] mt-[300px] relative">
+		<div className="flex flex-col justify-center mb-[250px] mt-[330px] relative">
 			<h2 className="font-bold text-4xl md:text-5xl text-center mb-14">
 				{name}
 			</h2>
