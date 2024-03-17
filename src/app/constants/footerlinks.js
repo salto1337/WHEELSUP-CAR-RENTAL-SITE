@@ -4,7 +4,7 @@ export const FOOTER_LINKS = [
     links:[
         "wheelsup",
         "warszawa centrum",
-        "wheelsup@gmail.com",
+        "wheels@o2.pl",
         "NIP: 123-456-789",
         "KRS: 123-456-789"
     ]
