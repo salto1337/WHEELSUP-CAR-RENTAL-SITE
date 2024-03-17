@@ -23,7 +23,9 @@ export function Navbar() {
 						: "hidden"
 				} md:block lg:block`}>
 				<ul
-					className={`flex gap-10 ${isMobileNavShown ? "flex flex-col" : ""}`}>
+					className={`flex text-xl lg:text-base gap-10 ${
+						isMobileNavShown ? "flex flex-col" : ""
+					}`}>
 					{NAV_LINKS.map((link) => {
 						return (
 							<li className=" transition-all hover:font-bold" key={link.key}>
