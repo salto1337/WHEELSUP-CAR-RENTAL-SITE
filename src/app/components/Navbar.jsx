@@ -19,7 +19,7 @@ export function Navbar() {
 			<nav
 				className={`${
 					isMobileNavShown
-						? " absolute right-2  bg-white z-20 top-[100px] w-[50%] opacity-[0.9] min-h-[500vh] text-center font-bold"
+						? "fixed right-2  bg-white z-20 top-0 py-[100px] w-[50%] opacity-[0.9] min-h-screen text-center font-bold"
 						: "hidden"
 				} md:block lg:block`}>
 				<ul
@@ -39,7 +39,7 @@ export function Navbar() {
 				onClick={() => {
 					setIsMobileNavShown((prevValue) => !prevValue);
 				}}
-				className=" md:hidden lg:hidden"
+				className=" md:hidden lg:hidden z-30"
 				src={burger}
 				alt="burger-button"
 				width={32}
